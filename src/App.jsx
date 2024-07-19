@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/home";
+import Search from "./pages/search";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>T1VITE</>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="search" element={<Search />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
