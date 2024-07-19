@@ -8,6 +8,7 @@ export default function Search() {
         <meta name="description" content="Search page" />
         <meta name="keywords" content="t1vite, search" />
       </Helmet>
+      Search
     </div>
   );
 }
